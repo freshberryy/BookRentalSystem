@@ -1,7 +1,6 @@
 #pragma once
 #include<iostream>
 #include<string>
-#include"BookMetaData.h"
 #include"BookPricePolicy.h"
 using namespace std;
 
@@ -18,13 +17,17 @@ public:
 	bool operator==(const Book& rhs) const {}
 	void serialize(ostream& os) const {}
 	static Book deserialize(const string& rhs) {}
-	string getCategory() const {}
+	string getTitle() const;
+	string getAuthor() const;
+	string getPublisher() const;
+	int getPublishYear() const;
 	double getFinalPrice() const {}
 
 protected:
 	string title;
 	string authors;
-	BookMetaData metadata;
+	string publisher;
+	int publishYear;
 	BookPricePolicy* pricePolicy;
 	double basePrice;
 };

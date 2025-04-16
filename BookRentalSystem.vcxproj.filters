@@ -21,9 +21,6 @@
     <ClCompile Include="Book.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BookMetaData.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Ebook.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -120,9 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="BookMetaData.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Ebook.h">

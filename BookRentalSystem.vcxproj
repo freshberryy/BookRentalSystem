@@ -131,7 +131,6 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="BasicRentalPolicy.cpp" />
     <ClCompile Include="Book.cpp" />
-    <ClCompile Include="BookMetaData.cpp" />
     <ClCompile Include="BookPricePolicy.cpp" />
     <ClCompile Include="BookSerializer.cpp" />
     <ClCompile Include="Catalog.cpp" />
@@ -167,7 +166,6 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="BasicRentalPolicy.h" />
     <ClInclude Include="Book.h" />
-    <ClInclude Include="BookMetaData.h" />
     <ClInclude Include="BookPricePolicy.h" />
     <ClInclude Include="BookSerializer.h" />
     <ClInclude Include="Catalog.h" />

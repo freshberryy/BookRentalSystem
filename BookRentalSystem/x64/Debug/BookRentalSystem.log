@@ -1,22 +1,17 @@
 ﻿  Application.cpp
-  BasicRentalPolicy.cpp
   Book.cpp
+  BookSerializer.cpp
+  CSVLoader.cpp
+  Catalog.cpp
   Command.cpp
-  ConsoleLogger.cpp
-  Customer.cpp
-  CustomerProfile.cpp
-  DiscountPricePolicy.cpp
+  Ebook.cpp
   LateFeePolicy.cpp
   Library.cpp
-  PremiumRentalPolicy.cpp
-  Rental.cpp
-  RentalHistory.cpp
-  RentalManager.cpp
-  RentalPolicy.cpp
+  PaperBook.cpp
   RentCommand.cpp
+  Rental.cpp
+  RentalManager.cpp
   ReturnCommand.cpp
   SearchCommand.cpp
-  User.cpp
-  UserManager.cpp
   코드를 생성하고 있습니다...
   BookRentalSystem.vcxproj -> C:\YHY\Project\BookRentalSystem\x64\Debug\BookRentalSystem.exe
