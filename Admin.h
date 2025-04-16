@@ -3,7 +3,7 @@
 class Admin : public User
 {
 public:
-	Admin() {}
+	Admin();
 	void displayMenu() const override;
 };
 

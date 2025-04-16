@@ -7,7 +7,7 @@ using namespace std;
 class Ebook : public Book
 {
 public:
-	Ebook(bool drmProtected) {}
+	Ebook(bool drmProtected);
 	bool getDrm() const;
 
 private:

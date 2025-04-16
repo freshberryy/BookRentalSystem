@@ -10,10 +10,10 @@ using namespace std;
 class Library
 {
 public:
-	Book* findByTitle(const string& title) const {}
-	void addBook(Book* book) {}
-	bool removeBook(const string& book) {}
-	void listAllBooks()const{}
+	Book* findByTitle(const string& title) const;
+	void addBook(Book* book);
+	bool removeBook(const string& book);
+	void listAllBooks()const;
 	void sortBooksByTitle();
 	void sortBooksByPrice();
 	void sortBooksByYearDesc();

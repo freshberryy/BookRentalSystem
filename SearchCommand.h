@@ -4,7 +4,7 @@ class Catalog;
 class SearchCommand : public Command
 {
 public:
-	void execute() override {}
+	void execute() override;
 
 private:
 	Library* library;

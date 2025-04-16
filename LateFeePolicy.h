@@ -8,7 +8,7 @@ public:
 
 	LateFeePolicy(double feePerDay);
 
-	double calculate(const Rental& rental, const string&curDate) const {}
+	double calculate(const Rental& rental, const string& curDate) const;
 
 private:
 	double feePerDay;

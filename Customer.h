@@ -6,9 +6,9 @@ class Customer : public User
 {
 public:
 	Customer() {}
-	Customer(CustomerProfile profile, RentalHistory history) {}
-	CustomerProfile& getProfile() {}
-	RentalHistory& getHistory() {}
+	Customer(CustomerProfile profile, RentalHistory history);
+	CustomerProfile& getProfile();
+	RentalHistory& getHistory();
 
 private:
 	CustomerProfile profile;

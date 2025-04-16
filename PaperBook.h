@@ -7,7 +7,7 @@ using namespace std;
 class PaperBook :public Book
 {
 public:
-	PaperBook(int totalPages) {}
+	PaperBook(int totalPages);
 	int getTotalPages()const;
 
 private:

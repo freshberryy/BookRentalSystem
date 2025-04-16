@@ -6,8 +6,8 @@ using namespace std;
 class User
 {
 public:
-	User() {}
-	User(string name, UserCredential credential) {}
+	User();
+	User(string name, UserCredential credential);
 	virtual void displayMenu() const = 0;
 	virtual ~User() = default;
 

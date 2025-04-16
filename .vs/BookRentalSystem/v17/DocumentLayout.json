@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\YHY\\Project\\BookRentalSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\Rental.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:Rental.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\Book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:Book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\RentalHistory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:RentalHistory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\Book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:Book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\DiscountPricePolicy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:DiscountPricePolicy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\BookPricePolicy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:BookPricePolicy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|C:\\YHY\\Project\\BookRentalSystem\\DiscountPricePolicy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3C0CE183-A339-4DAC-8F2D-F425992A930F}|BookRentalSystem.vcxproj|solutionrelative:DiscountPricePolicy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,27 +55,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Rental.h",
-              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\Rental.h",
-              "RelativeDocumentMoniker": "Rental.h",
-              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\Rental.h",
-              "RelativeToolTip": "Rental.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "Book.h",
+              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\Book.h",
+              "RelativeDocumentMoniker": "Book.h",
+              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\Book.h",
+              "RelativeToolTip": "Book.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-16T09:33:09.932Z",
+              "WhenOpened": "2025-04-16T12:22:51.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-16T12:12:48.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiscountPricePolicy.cpp",
+              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\DiscountPricePolicy.cpp",
+              "RelativeDocumentMoniker": "DiscountPricePolicy.cpp",
+              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\DiscountPricePolicy.cpp",
+              "RelativeToolTip": "DiscountPricePolicy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-16T12:10:11.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DiscountPricePolicy.h",
+              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\DiscountPricePolicy.h",
+              "RelativeDocumentMoniker": "DiscountPricePolicy.h",
+              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\DiscountPricePolicy.h",
+              "RelativeToolTip": "DiscountPricePolicy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-16T12:09:58.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookPricePolicy.h",
+              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\BookPricePolicy.h",
+              "RelativeDocumentMoniker": "BookPricePolicy.h",
+              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\BookPricePolicy.h",
+              "RelativeToolTip": "BookPricePolicy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-16T12:07:06.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RentalHistory.h",
-              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\RentalHistory.h",
-              "RelativeDocumentMoniker": "RentalHistory.h",
-              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\RentalHistory.h",
-              "RelativeToolTip": "RentalHistory.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-16T09:21:53.708Z",
+              "Title": "Book.cpp",
+              "DocumentMoniker": "C:\\YHY\\Project\\BookRentalSystem\\Book.cpp",
+              "RelativeDocumentMoniker": "Book.cpp",
+              "ToolTip": "C:\\YHY\\Project\\BookRentalSystem\\Book.cpp",
+              "RelativeToolTip": "Book.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-16T09:51:19.476Z",
               "EditorCaption": ""
             }
           ]

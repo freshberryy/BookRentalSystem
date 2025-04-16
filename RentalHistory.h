@@ -5,8 +5,8 @@
 class RentalHistory
 {
 public:
-	void addRental(Rental* rhs) {}
-	void printHistory()const {}
+	void addRental(Rental* rhs);
+	void printHistory()const;
 	void sort(std::function<bool(Rental*, Rental*)> cmp);
 
 

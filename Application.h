@@ -7,8 +7,8 @@
 class Application
 {
 public:
-	void run() {}
-	void printMainMenu() {}
+	void run();
+	void printMainMenu();
 private:
 	UserManager userManager;
 	Library library;

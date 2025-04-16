@@ -7,6 +7,7 @@ class BookPricePolicy
 {
 public:
 	virtual double calculatePrice(double basePrice) const = 0;
+	virtual BookPricePolicy* clone() const = 0;
 	virtual ~BookPricePolicy() = default;
 };
 

@@ -3,6 +3,6 @@
 class ConsoleLogger : public Logger
 {
 public:
-	void log(const string& msg) override {};
+	void log(const string& msg) override;
 };
 

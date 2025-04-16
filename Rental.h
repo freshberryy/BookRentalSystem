@@ -9,9 +9,9 @@ class Customer;
 class Rental
 {
 public:
-	Rental(Book* rentBook, Customer* borrower, string rentDate, string returnDate) {}
-	bool operator<(const Rental& rhs) const {}
-	bool isOverdue(string today)const {}
+	Rental(Book* rentBook, Customer* borrower, string rentDate, string returnDate);
+	bool operator<(const Rental& rhs) const;
+	bool isOverdue(string today)const;
 	string getRentDate()const;
 	string getReturnDate()const;
 
