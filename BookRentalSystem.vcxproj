@@ -127,7 +127,75 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BookRentalSystem.cpp" />
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BasicRentalPolicy.cpp" />
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="BookMetaData.cpp" />
+    <ClCompile Include="BookPricePolicy.cpp" />
+    <ClCompile Include="BookSerializer.cpp" />
+    <ClCompile Include="Catalog.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="ConsoleLogger.cpp" />
+    <ClCompile Include="CSVLoader.cpp" />
+    <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="CustomerProfile.cpp" />
+    <ClCompile Include="DiscountPricePolicy.cpp" />
+    <ClCompile Include="Ebook.cpp" />
+    <ClCompile Include="FileLogger.cpp" />
+    <ClCompile Include="FixedPricePolicy.cpp" />
+    <ClCompile Include="InventoryManager.cpp" />
+    <ClCompile Include="LateFeePolicy.cpp" />
+    <ClCompile Include="Library.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PaperBook.cpp" />
+    <ClCompile Include="PremiumRentalPolicy.cpp" />
+    <ClCompile Include="Rental.cpp" />
+    <ClCompile Include="RentalHistory.cpp" />
+    <ClCompile Include="RentalManager.cpp" />
+    <ClCompile Include="RentalPolicy.cpp" />
+    <ClCompile Include="RentCommand.cpp" />
+    <ClCompile Include="ReturnCommand.cpp" />
+    <ClCompile Include="SearchCommand.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserCredential.cpp" />
+    <ClCompile Include="UserManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="BasicRentalPolicy.h" />
+    <ClInclude Include="Book.h" />
+    <ClInclude Include="BookMetaData.h" />
+    <ClInclude Include="BookPricePolicy.h" />
+    <ClInclude Include="BookSerializer.h" />
+    <ClInclude Include="Catalog.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="ConsoleLogger.h" />
+    <ClInclude Include="CSVLoader.h" />
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="CustomerProfile.h" />
+    <ClInclude Include="DiscountPricePolicy.h" />
+    <ClInclude Include="Ebook.h" />
+    <ClInclude Include="FileLogger.h" />
+    <ClInclude Include="FixedPricePolicy.h" />
+    <ClInclude Include="InventoryManager.h" />
+    <ClInclude Include="LateFeePolicy.h" />
+    <ClInclude Include="Library.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="PaperBook.h" />
+    <ClInclude Include="PremiumRentalPolicy.h" />
+    <ClInclude Include="Rental.h" />
+    <ClInclude Include="RentalHistory.h" />
+    <ClInclude Include="RentalManager.h" />
+    <ClInclude Include="RentalPolicy.h" />
+    <ClInclude Include="RentCommand.h" />
+    <ClInclude Include="ReturnCommand.h" />
+    <ClInclude Include="SearchCommand.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserCredential.h" />
+    <ClInclude Include="UserManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
