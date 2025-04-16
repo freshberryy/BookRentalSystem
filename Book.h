@@ -16,7 +16,7 @@ public:
 	~Book() {}
 	bool operator==(const Book& rhs) const {}
 	void serialize(ostream& os) const {}
-	static Book deserialize(const string& rhs) {}
+	static Book* deserialize(const string& rhs) {}
 	string getTitle() const;
 	string getAuthor() const;
 	string getPublisher() const;
@@ -25,7 +25,7 @@ public:
 
 protected:
 	string title;
-	string authors;
+	string author;
 	string publisher;
 	int publishYear;
 	BookPricePolicy* pricePolicy;

@@ -4,14 +4,14 @@ class CustomerProfile
 {
 public:
 	CustomerProfile() {}
-	CustomerProfile(RentalPolicy* rentalPolicy, int curRentalPolicy, int rentalLimit){}
+	CustomerProfile(RentalPolicy* rentalPolicy, int curRentalCount, int rentalLimit){}
 	bool canRent() const {}
 	void incrementRent() {}
 	void decrementRent() {}
 
 private:
 	RentalPolicy* rentalPolicy;
-	int curRentalPolicy;
+	int curRentalCount;
 	int rentalLimit;
 };
 

@@ -7,7 +7,7 @@ using namespace std;
 class InventoryManager
 {
 public:
-	int getQuatity(const string& rhs) const {}
+	int getQuantity(const string& rhs) const {}
 	void increase(const string& rhs) {}
 	void decrease(const string& rhs) {}
 

@@ -1,15 +1,16 @@
 #pragma once
-class Rental;
-
+#include<functional>
+#include<vector>
+#include"Rental.h"
 class RentalHistory
 {
 public:
 	void addRental(Rental* rhs) {}
 	void printHistory()const {}
-	int getCount()const {}
+	void sort(std::function<bool(Rental*, Rental*)> cmp);
+
 
 private:
-	Rental** rentals;
-	int count;
+	vector<Rental> rentals;
 };
 

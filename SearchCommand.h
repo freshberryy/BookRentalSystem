@@ -1,5 +1,6 @@
 #pragma once
 #include "Command.h"
+class Catalog;
 class SearchCommand : public Command
 {
 public:
@@ -7,7 +8,6 @@ public:
 
 private:
 	Library* library;
-	RentalManager* manage;
-	Customer* customer;
+	Catalog* catalog;
 };
 
