@@ -1,7 +1,7 @@
 본 프로젝트는 C++14를 사용하여 구현한 도서 대여 시뮬레이션 시스템이다. 실무 수준의 객체지향 설계와 구현을 목표로 한다.
 
 ## 주요 특징  
-- 클래스를 책임 단위로 분리하여 약 30개 정도로 구성  
+- 클래스를 책임 단위로 분리하여 약 34개 정도로 구성  
 - 모든 동적 객체는 스마트 포인터를 쓰지 않고 직접 메모리 할당 및 해제를 하여 자원 수명 제어 연습  
 - 실제 도서 데이터셋 활용(출처: https://www.kaggle.com/datasets/elvinrustam/books-dataset?resource=download&select=BooksDatasetClean.csv)
 - 파일 직렬화/역직렬화 구현  
