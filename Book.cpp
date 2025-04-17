@@ -1,5 +1,7 @@
 #include "Book.h"
 
+Book::Book() {}
+
 Book::Book(char* title, string author, string publisher, int year, BookPricePolicy* policy, double basePrice) :author(author), publisher(publisher), publishYear(year), basePrice(basePrice)
 {
 	cout << "Book()" << endl;

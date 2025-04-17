@@ -5,14 +5,23 @@
 class RentalHistory
 {
 public:
+	RentalHistory();
+	~RentalHistory();
 	void addRental(Rental* rhs);
-	void printHistory()const;
+
+	//반드시 호출측에서 자원 해제 해주세요.
+	Rental** getRentalByBookTitle(string& title);
+
+	//반드시 호출측에서 자원 해제 해주세요.
+	Rental** getAllActiveRentals();
+
+	void printAll()const;
 	void sort(std::function<bool(Rental*, Rental*)> cmp);
 
 
 private:
-	Rental** rentals;
-	int count;
+	Rental** records;
+	int size;
 	int capacity;
 	void resize();
 };

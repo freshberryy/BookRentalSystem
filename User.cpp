@@ -11,3 +11,8 @@ UserCredential User::getUserCredential() const
 {
 	return credential;
 }
+
+string User::getName()const
+{
+	return name;
+}

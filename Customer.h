@@ -8,6 +8,7 @@ public:
 	Customer() {}
 	Customer(string name, UserCredential credential, CustomerProfile profile, RentalHistory history);
 	void displayMenu() const override;
+	Customer* clone() const;
 	CustomerProfile& getProfile();
 	RentalHistory& getHistory();
 

@@ -11,6 +11,7 @@ public:
 	virtual void displayMenu() const = 0;
 	UserCredential getUserCredential() const;
 	virtual ~User() = default;
+	string getName() const;
 
 protected:
 	string name;

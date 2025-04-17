@@ -1,5 +1,7 @@
 #include "Customer.h"
 
+Customer::Customer(){}
+
 Customer::Customer(string name, UserCredential credential, CustomerProfile profile, RentalHistory history) : User(name, credential), profile(profile), history(history){}
 
 void Customer::displayMenu() const
@@ -13,6 +15,11 @@ void Customer::displayMenu() const
     cout << "0. 로그아웃\n";
     cout << "=========================\n";
     cout << ">> 번호를 선택하세요: ";
+}
+
+Customer* Customer::clone() const
+{
+    return new Customer(*this);
 }
 
 CustomerProfile& Customer::getProfile()
