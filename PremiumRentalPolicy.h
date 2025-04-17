@@ -4,7 +4,8 @@
 class PremiumRentalPolicy : public RentalPolicy
 {
 public:
-	bool canRent(const CustomerProfile&) const override;
+	PremiumRentalPolicy();
+	~PremiumRentalPolicy();
 	int maxBooks() const override;
 };
 

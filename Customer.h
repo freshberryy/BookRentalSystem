@@ -6,7 +6,8 @@ class Customer : public User
 {
 public:
 	Customer() {}
-	Customer(CustomerProfile profile, RentalHistory history);
+	Customer(string name, UserCredential credential, CustomerProfile profile, RentalHistory history);
+	void displayMenu() const override;
 	CustomerProfile& getProfile();
 	RentalHistory& getHistory();
 

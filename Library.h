@@ -22,7 +22,10 @@ public:
 	void saveToFile(const string& filename);
 
 private:
-	vector<Book>books;
+	Book**books;
+	int bookCount;
+	int capacity;
 	InventoryManager invetory;
+	void resize();
 };
 

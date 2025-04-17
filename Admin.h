@@ -3,7 +3,7 @@
 class Admin : public User
 {
 public:
-	Admin();
+	Admin(string name, UserCredential credential);
 	void displayMenu() const override;
 };
 

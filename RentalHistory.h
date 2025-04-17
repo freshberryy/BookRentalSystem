@@ -11,6 +11,9 @@ public:
 
 
 private:
-	vector<Rental> rentals;
+	Rental** rentals;
+	int count;
+	int capacity;
+	void resize();
 };
 

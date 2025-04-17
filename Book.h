@@ -22,6 +22,9 @@ public:
 	string getPublisher() const;
 	int getPublishYear() const;
 	double getFinalPrice() const;
+	void print(ostream& os) const;
+	friend ostream& operator<<(ostream&os, const Book& rhs);
+	Book* clone() const;
 
 protected:
 	char* title;
