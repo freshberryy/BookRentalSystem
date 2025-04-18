@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include<sstream>
 #include "Book.h"
 #include"Customer.h"
 
@@ -24,6 +25,10 @@ public:
 	string getReturnDate()const;
 	bool getReturned()const;
 	Rental* clone() const;
+	void serialize(ostream& os) const;
+	static Rental* deserialize(const string& line);
+	void setRentBook(Book*);
+	void setBorrower(Customer*);
 
 private:
 	Book* rentBook;
@@ -32,4 +37,5 @@ private:
 	string returnDate;
 	bool isReturned;
 };
+
 

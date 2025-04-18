@@ -1,5 +1,6 @@
 #include "RentalHistory.h"
 #include"Rental.h"
+#include <iomanip>
 RentalHistory::RentalHistory() :size(0), capacity(10)
 {
 	records = new Rental * [capacity];
@@ -84,10 +85,11 @@ void RentalHistory::printAll()const
 {
 	for (int i = 0; i < size; i++)
 	{
-		cout << "대출자: " << records[i]->getBorrower()->getName()
-			<< " 빌린 책: " << records[i]->getRentBook()->getTitle()
-			<< " 빌린 날짜: " << records[i]->getRentDate()
-			<< " 대출 만기일: " << records[i]->getReturnDate() << endl;
+		cout << left;
+		cout << setw(12) << "대출자" << " : " << records[i]->getBorrower()->getName() << "\n"
+			<< setw(12) << "빌린 책" << " : " << records[i]->getRentBook()->getTitle() << "\n"
+			<< setw(12) << "빌린 날짜" << " : " << records[i]->getRentDate() << "\n"
+			<< setw(12) << "대출 만기일" << " : " << records[i]->getReturnDate() << "\n\n";
 	}
 }
 

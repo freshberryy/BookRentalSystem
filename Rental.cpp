@@ -85,3 +85,54 @@ Rental* Rental::clone() const
 {
 	return new Rental(*this);
 }
+
+void Rental::serialize(ostream& os) const
+{
+	os << "\"" << rentBook->getTitle() << "\""
+		<< ",," << "\"" << borrower->getUserCredential().getUserId() << "\""
+		<< ",," << "\"" << rentDate << "\""
+		<< ",," << "\"" << returnDate << "\""
+		<< "\n";
+}
+
+Rental* Rental::deserialize(const string& line)
+{
+	string fields[4];
+	int fieldIndex = 0;
+
+	bool inQuotes = false;
+	string token;
+	string temp;
+	for (size_t i = 0; i < line.size(); ++i)
+	{
+		char c = line[i];
+		if (c == '"')
+		{
+			inQuotes = !inQuotes;
+		}
+		else if (!inQuotes && c == ',' && i + 1 < line.size() && line[i + 1] == ',')
+		{
+			if (fieldIndex < 4)
+				fields[fieldIndex++] = token;
+			token.clear();
+			++i; 
+		}
+		else
+		{
+			token += c;
+		}
+	}
+	if (fieldIndex < 4)
+		fields[fieldIndex] = token;
+	return new Rental(nullptr, nullptr, fields[2], fields[3], false);
+}
+
+void Rental::setRentBook(Book* book)
+{
+	rentBook = book;
+}
+
+void Rental::setBorrower(Customer* customer)
+{
+	borrower = customer;
+}

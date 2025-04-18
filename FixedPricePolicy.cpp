@@ -9,3 +9,8 @@ BookPricePolicy* FixedPricePolicy::clone() const
 {
 	return new FixedPricePolicy(*this);
 }
+
+string FixedPricePolicy::getPolicyType() const
+{
+	return "Á¤»ó°¡";
+}

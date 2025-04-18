@@ -1,13 +1,23 @@
-﻿  Application.cpp
+﻿  Admin.cpp
+  Application.cpp
+  Book.cpp
+  BookSerializer.cpp
+  CSVLoader.cpp
+  Catalog.cpp
   Command.cpp
   Customer.cpp
+  Ebook.cpp
+  InventoryManager.cpp
   LateFeePolicy.cpp
+  Library.cpp
+  PaperBook.cpp
   RentCommand.cpp
   Rental.cpp
   RentalHistory.cpp
   RentalManager.cpp
   ReturnCommand.cpp
   SearchCommand.cpp
-  UserManager.cpp
+  main.cpp
   코드를 생성하고 있습니다...
+  LINK : C:\YHY\Project\BookRentalSystem\x64\Debug\BookRentalSystem.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   BookRentalSystem.vcxproj -> C:\YHY\Project\BookRentalSystem\x64\Debug\BookRentalSystem.exe

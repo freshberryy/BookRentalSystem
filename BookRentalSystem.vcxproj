@@ -166,6 +166,8 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="BasicRentalPolicy.h" />
     <ClInclude Include="Book.h" />
+    <ClInclude Include="BookFilterByPriceRange.h" />
+    <ClInclude Include="BookFilterByYearRange.h" />
     <ClInclude Include="BookPricePolicy.h" />
     <ClInclude Include="BookSerializer.h" />
     <ClInclude Include="Catalog.h" />

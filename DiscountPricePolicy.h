@@ -7,6 +7,7 @@ public:
 	DiscountPricePolicy(double rate);
 	double calculatePrice(double basePrice) const override;
 	BookPricePolicy* clone() const override;
+	string getPolicyType() const override;
 
 private:
 	double discountRate;

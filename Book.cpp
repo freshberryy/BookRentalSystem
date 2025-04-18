@@ -4,7 +4,6 @@ Book::Book() {}
 
 Book::Book(char* title, string author, string publisher, int year, BookPricePolicy* policy, double basePrice) :author(author), publisher(publisher), publishYear(year), basePrice(basePrice)
 {
-	cout << "Book()" << endl;
 	int len = 0;
 	while (title[len] != '\0')
 	{
@@ -17,7 +16,6 @@ Book::Book(char* title, string author, string publisher, int year, BookPricePoli
 
 Book::Book(const Book& rhs)
 {
-	cout << "Book(const Book &)" << endl;
 	int len = 0;
 	while (rhs.title[len] != '\0')
 	{
@@ -35,7 +33,6 @@ Book::Book(const Book& rhs)
 
 Book& Book::operator=(const Book& rhs)
 {
-	cout << "operator=(const Book &)" << endl;
 	if (this == &rhs)
 		return *this;
 	delete[] this->title;
@@ -57,7 +54,6 @@ Book& Book::operator=(const Book& rhs)
 
 Book::Book(Book&& rhs)
 {
-	cout << "Book(Book &&)" << endl;
 	this->title = rhs.title;
 	author = rhs.author;
 	publisher = rhs.publisher;
@@ -74,7 +70,6 @@ Book::Book(Book&& rhs)
 
 Book& Book::operator=(Book&& rhs)
 {
-	cout << "operator(Book &&)" << endl;
 	if (this == &rhs)
 		return *this;
 	delete[] this->title;
@@ -96,7 +91,6 @@ Book& Book::operator=(Book&& rhs)
 
 Book::~Book()
 {
-	cout << "~Book()" << endl;
 	delete[] title;
 
 	//Book은 pricePolicy의 소유권 보유. 따라서 소멸 시 delete.
@@ -117,10 +111,12 @@ bool Book::operator==(const Book& rhs) const
 
 void Book::print(ostream& os) const
 {
-	os << "제목: " << title
-		<< ", 지은이: " << author
-		<< ", 출판사: " << publisher
-		<< ", 출판년: " << publishYear << endl;
+	os << left;
+	os << setw(10) << "제목" << " : " << title << "\n"
+		<< setw(10) << "지은이" << " : " << author << "\n"
+		<< setw(10) << "출판사" << " : " << publisher << "\n"
+		<< setw(10) << "출판년도" << " : " << publishYear << "\n\n";
+
 }
 
 ostream& operator<<(ostream& os, const Book& rhs)
@@ -152,4 +148,58 @@ int Book::getPublishYear() const
 Book* Book::clone() const
 {
 	return new Book(*this);
+}
+
+void Book::serialize(ostream& os) const
+{
+	os << "\"" << string(title) << "\","
+		<< "\"" << author << "\","
+		<< "\"" << publisher << "\","
+		<< "\"" << publishYear << "\","
+		<< "\"" << getFinalPrice() << "\","
+		<< "\"" << pricePolicy->getPolicyType() << "\""
+		<< "\n";
+}
+
+Book* Book::deserialize(const string& line)
+{
+	string parsed[5];
+	int fieldIndex = 0;
+	bool inQuotes = false;
+	string token;
+	for (size_t i = 0; i < line.size(); i++)
+	{
+		char c = line[i];
+		if (c == '"')
+			inQuotes = !inQuotes;
+		else if (c == ',' && !inQuotes)
+		{
+			if (fieldIndex < 5)
+				parsed[fieldIndex++] = token;
+			token.clear();
+		}
+		else
+		{
+			token += c;
+		}
+	}
+	if (fieldIndex < 5)
+		parsed[fieldIndex] = token;
+
+	char* title_cstr = new char[parsed[0].size() + 1];
+	strcpy_s(title_cstr, parsed[0].size() + 1, parsed[0].c_str());
+	string author = parsed[1];
+	string publisher = parsed[2];
+
+	string yearStr = parsed[3];
+
+	int year = stoi(yearStr);
+	double basePrice = stod(parsed[4]);
+	BookPricePolicy* p = nullptr;
+	if (basePrice >= 5000)
+		p = new DiscountPricePolicy(0.1);
+	else
+		p = new FixedPricePolicy();
+
+	return new Book(title_cstr, author, publisher, year, p, basePrice);
 }

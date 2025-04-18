@@ -12,12 +12,12 @@ class Catalog
 public:
 
 	Catalog(Library* lib);
-	Book* searchByTitle(const string& title, ostream& os) const;
-	Book* searchByAuthor(const string& autor, ostream& os) const;
-	Book* searchByPublisher(const string& publisher, ostream& os)const;
-	vector<Book*> searchByYearRange(int startYear, int endYear, ostream& os)const;
-	vector<Book*> filterBooks(function<bool(const Book& book)> predicate, ostream& os)const;
-	vector<Book*> filterAndSort(function<bool(const Book& book)> filter, function<bool(Book*, Book*)> cmp, ostream& os)const;
+	void searchByTitle(const string& title, ostream& os) const;
+	void searchByAuthor(const string& autor, ostream& os) const;
+	void searchByPublisher(const string& publisher, ostream& os)const;
+	void searchByYearRange(int startYear, int endYear, ostream& os)const;
+	void filterBooks(function<bool(const Book& book)> predicate, ostream& os)const;
+	void filterAndSort(function<bool(const Book& book)> filter, function<bool(Book*, Book*)> cmp, ostream& os)const;
 
 private:
 	Library* library;

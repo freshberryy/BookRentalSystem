@@ -1,7 +1,11 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include<sstream>
+#include <iomanip> 
 #include"BookPricePolicy.h"
+#include"DiscountPricePolicy.h"
+#include"FixedPricePolicy.h"
 using namespace std;
 
 class Book
