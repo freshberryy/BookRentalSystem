@@ -7,5 +7,6 @@ public:
 	BasicRentalPolicy();
 	~BasicRentalPolicy();
 	int maxBooks() const override;
+	int maxRentDuration() const override;
 };
 

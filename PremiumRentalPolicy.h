@@ -7,5 +7,6 @@ public:
 	PremiumRentalPolicy();
 	~PremiumRentalPolicy();
 	int maxBooks() const override;
+	int maxRentDuration() const override;
 };
 

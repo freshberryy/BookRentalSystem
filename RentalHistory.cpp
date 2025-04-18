@@ -1,5 +1,5 @@
 #include "RentalHistory.h"
-
+#include"Rental.h"
 RentalHistory::RentalHistory() :size(0), capacity(10)
 {
 	records = new Rental * [capacity];
@@ -89,4 +89,21 @@ void RentalHistory::printAll()const
 			<< " 빌린 날짜: " << records[i]->getRentDate()
 			<< " 대출 만기일: " << records[i]->getReturnDate() << endl;
 	}
+}
+
+int RentalHistory::getSize() const
+{
+	return size;
+}
+
+Rental* RentalHistory::getActiveRentalByTitle(const string& title)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (!records[i]->getReturned() && records[i]->getRentBook()->getTitle() == title)
+		{
+			return records[i];
+		}
+	}
+	return nullptr;
 }

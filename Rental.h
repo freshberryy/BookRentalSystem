@@ -3,12 +3,14 @@
 #include<string>
 #include "Book.h"
 #include"Customer.h"
+
 using namespace std;
 
 
 class Rental
 {
 public:
+	Rental();
 	Rental(Book* rentBook, Customer* borrower, string rentDate, string returnDate, bool isReturned);
 	Rental(const Rental& rhs);
 	~Rental();

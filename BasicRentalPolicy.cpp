@@ -14,3 +14,8 @@ int BasicRentalPolicy::maxBooks() const
 {
 	return 5;
 }
+
+int BasicRentalPolicy::maxRentDuration() const
+{
+	return 10;
+}

@@ -26,3 +26,8 @@ CustomerProfile& Customer::getProfile()
 {
     return profile;
 }
+
+RentalHistory& ::Customer::getHistory()
+{
+    return history;
+}

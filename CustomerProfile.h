@@ -12,6 +12,7 @@ public:
 	int getRentalLimit() const;
 	int getCurRentalCount() const;
 	void applyPolicy();
+	RentalPolicy* getRentalPolicy() const;
 
 private:
 	RentalPolicy* rentalPolicy;

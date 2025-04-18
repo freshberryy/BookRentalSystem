@@ -1,5 +1,7 @@
 #include "Rental.h"
 
+Rental::Rental() {}
+
 Rental::Rental(Book* rentBook, Customer* borrower, string rentDate, string returnDate, bool isReturned):rentDate(rentDate), returnDate(returnDate), isReturned(isReturned)
 {
 	this->rentBook = rentBook;

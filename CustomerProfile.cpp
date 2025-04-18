@@ -43,3 +43,8 @@ void CustomerProfile::applyPolicy()
 {
 	rentalLimit = rentalPolicy->maxBooks();
 }
+
+RentalPolicy* CustomerProfile::getRentalPolicy() const
+{
+	return rentalPolicy;
+}
