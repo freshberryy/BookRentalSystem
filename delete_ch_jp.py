@@ -16,4 +16,4 @@ def contains_cjk(text):
 df = df[~df.apply(lambda row: contains_cjk(' '.join(map(str, row))), axis=1)]
 df['대여료'] = [random.randint(1000, 10000) for _ in range(len(df))]
 output_file = os.path.join(current_dir, 'books.csv')
-df.to_csv(output_file, index=False, encoding='utf-8-sig')
+df.to_csv(output_file, index=False)
