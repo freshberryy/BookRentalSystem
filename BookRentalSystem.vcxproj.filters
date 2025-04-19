@@ -21,12 +21,6 @@
     <ClCompile Include="Book.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Ebook.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PaperBook.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BookPricePolicy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -84,9 +78,6 @@
     <ClCompile Include="InventoryManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Catalog.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Logger.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -96,19 +87,16 @@
     <ClCompile Include="FileLogger.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CSVLoader.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Command.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="RentCommand.cpp">
+    <ClCompile Include="RentBookCommand.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ReturnCommand.cpp">
+    <ClCompile Include="ReturnBookCommand.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SearchCommand.cpp">
+    <ClCompile Include="SearchBookCommand.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Application.cpp">
@@ -129,15 +117,30 @@
     <ClCompile Include="OutOfStockException.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ListBooksCommand.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowMyRentalsCommand.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginCommand.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoutCommand.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AddBookCommand.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteBookCommand.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Catalog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Ebook.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="PaperBook.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="BookPricePolicy.h">
@@ -197,9 +200,6 @@
     <ClInclude Include="InventoryManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Catalog.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Logger.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -215,13 +215,13 @@
     <ClInclude Include="Command.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="RentCommand.h">
+    <ClInclude Include="RentBookCommand.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ReturnCommand.h">
+    <ClInclude Include="ReturnBookCommand.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SearchCommand.h">
+    <ClInclude Include="SearchBookCommand.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Application.h">
@@ -237,6 +237,27 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ErrorCode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBooksCommand.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowMyRentalsCommand.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginCommand.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoutCommand.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AddBookCommand.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteBookCommand.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Catalog.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
